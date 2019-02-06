@@ -1,0 +1,6 @@
+framework module WeScan {
+  umbrella header "WeScan-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,20 @@
+PODS:
+  - PDFGenerator (3.0.0)
+  - WeScan (1.0.0)
+
+DEPENDENCIES:
+  - PDFGenerator (~> 3.0.0)
+  - WeScan (~> 1.0.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - PDFGenerator
+    - WeScan
+
+SPEC CHECKSUMS:
+  PDFGenerator: e00fd09ae8021e304b5672cf11bc28234fc626e7
+  WeScan: a049a4a2a0eb1c4560cf649ebd933d07b0d9ef4c
+
+PODFILE CHECKSUM: 3e2597c3b47e5736c91c87daea96143be2735706
+
+COCOAPODS: 1.5.3

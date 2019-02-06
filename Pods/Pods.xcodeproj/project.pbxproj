@@ -1,0 +1,975 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		008831C7D6F9E2CEB7F8D1DE00FB1F83 /* UIImage+Orientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B798C4EC26B52BD3781265EA91CE138C /* UIImage+Orientation.swift */; };
+		01D44A94C265F4AC3F9D70641A800D91 /* enhance@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3241E2A45EAE449667FB7F5620540017 /* enhance@3x.png */; };
+		029A24BBAAAB7A60046E802F615D47F7 /* ShutterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3131B00E51C4B80D5B04A1567D4587FA /* ShutterButton.swift */; };
+		0B41EEBA0F21F1A756D4DA517A713B4F /* flashUnavailable@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB5BD32979DEFCD3DC83B189437173AB /* flashUnavailable@2x.png */; };
+		1217B41B717A3B9D4E64DA859A6CBB40 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873A29E6E2D755FFEFB7890F0FBB0D65 /* ReviewViewController.swift */; };
+		14F0E3621A4B9DB5B2BE121C6AD28031 /* FilePathConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFA63102D82F77C0554382E47247068 /* FilePathConvertible.swift */; };
+		1BD48CF74E5C1A4B0217B5C4B84E82E5 /* PDFPagedScrollViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B531851A61221E2D267AC092A2E610D1 /* PDFPagedScrollViewConfiguration.swift */; };
+		1E1FE901756183DA63490A5D515883BE /* CGAffineTransform+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22E7DBC91D05B8234A7D66F72B38524 /* CGAffineTransform+Utils.swift */; };
+		1EF7347929FA5AC8A0FC2316D8456A15 /* VisionRectangleDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD520D8FEFFE623C217F2DF19EB00B7F /* VisionRectangleDetector.swift */; };
+		2698AC75282B239AA7BA5D1488871447 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0080884694CA0B5998CAA4814BA8493 /* ScannerViewController.swift */; };
+		2EFCD503B18F18D811191364814D2BDE /* EditScanCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C34633EBEC4C6B907FE59EFC44D45B /* EditScanCornerView.swift */; };
+		3325C6ECC2E5383B08F363FCFE556AD6 /* Transformable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62213F23A0D4B92ADF76097D34E1002 /* Transformable.swift */; };
+		33CD3D5137D5F1166CEED5FEF4D1677F /* CGPoint+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B98B0D21DCC9ADC41F78C613ED1084 /* CGPoint+Utils.swift */; };
+		41D61C03C713AC6F5918EFD513117774 /* WeScan-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 19783A579436B00E0570A1F929A139C6 /* WeScan-dummy.m */; };
+		422D1B9BDA72F3479711DECB0D96311C /* DPIType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F5E7006ACF2B0D39D7BBACBE548577 /* DPIType.swift */; };
+		4F07185A946350E28BF0034B7B72523F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C016E445C42C7C4E4F1C52C886DBC59C /* Localizable.strings */; };
+		4FFC72EEBA853BB7531A5058BB85FEA2 /* CaptureSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0D235CD9D02AA6F3ABD1F476309902 /* CaptureSession.swift */; };
+		507EB76CE3BD4556BC9D28C97F96C8EE /* ImageScannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4A0B1CB7166318303CC97A7E5CFF20 /* ImageScannerController.swift */; };
+		590878CDD0A16F549AB94191FE6A5E87 /* PDFGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309F4F6907A2BDF7EA446D05D79A5368 /* PDFGenerator.swift */; };
+		5A32ED1027A6920B09DDDB93A9E2C9F0 /* PDFGenerateError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CF308EE5AC325186FFD8C007A0B870 /* PDFGenerateError.swift */; };
+		5C8D949C0AA64C1194AD337F53CB3FCA /* WeScan-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ED7D6E237FB55088F1DD7EFC6C133BF /* WeScan-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5CFECAED2D66693F51762822771381A4 /* Pods-Betcalsa-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E39282CB61D086EC6CB5B3A71C217E85 /* Pods-Betcalsa-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60FE573B4BF0C47C44A359EA6A45E34B /* UIImage+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF80098B64EC25C74373BF496199944 /* UIImage+Utils.swift */; };
+		61FCE2D29B5009DBB1D5A1AA0C414B4D /* Pods-Betcalsa-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2EF80366A90A45324B5822FCA82067 /* Pods-Betcalsa-dummy.m */; };
+		691AFF400DEDB29F6CBF13DFDF5C6D6C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18DA9D271C4EC99485E96A4760883C03 /* Foundation.framework */; };
+		722C4A04A827EB5104AA35D4109BBE0B /* enhance@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D41C038665DD6701C73A4D0710587AA6 /* enhance@2x.png */; };
+		730A274AE64694FB6F7E16FC138FB90D /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379B9887B5765CC510000C1E391AB6C7 /* Error.swift */; };
+		734913A47C8D23C7C4371064311638DE /* PDFPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D331D56CFD9E46E9F916CFDBF55A7FC0 /* PDFPage.swift */; };
+		783E4A4F7A42DB1E22F715F58AD51CE1 /* ZoomGestureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CFA67BAB1D013B39EAA223BA0284FD /* ZoomGestureController.swift */; };
+		7D1BB9FD4ECA825EFB4FC2DFFCCEEFB8 /* Quadrilateral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B5020612C4C72B9F4011902D7BD916 /* Quadrilateral.swift */; };
+		8198B05BC267BB773747E3FF0D4C1E67 /* PDFGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = E96A73072137D5FEC2B45FD338E5E9C8 /* PDFGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8239EC87DC5591A020033DA49EF3EF6A /* CIImage+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5031521ECBCDFC76B4196F0ED0616A55 /* CIImage+Utils.swift */; };
+		8B902BA41292547F901E24025593186B /* flash.png in Resources */ = {isa = PBXBuildFile; fileRef = FAEFFDEB86D67D94E4A8535D14714B88 /* flash.png */; };
+		94653E9D4FE6FEDE9B85899BFC67BD78 /* CaptureSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC63342FD5C3652B7EF91E4C026CD5C4 /* CaptureSessionManager.swift */; };
+		9C294F07F2DC6D966709F11457A788A9 /* RectangleFeaturesFunnel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B8D3A137C722991F470928918BFAEA /* RectangleFeaturesFunnel.swift */; };
+		9CD6E5D927BE00763C0BB1AF97B13DAA /* PDFPageRenderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EF0193878A7B3A5D94526D5B6F5475 /* PDFPageRenderable.swift */; };
+		A5761B63947C5E94C4B961AFE0344FE7 /* CaptureSession+Orientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DCF15E0C975C6A704EF6E7F550DBA7 /* CaptureSession+Orientation.swift */; };
+		A65D210B94CC76D34B7FD1BCE4A3AD03 /* PDFGenerator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 643569BD26084AF374B82A1177A78FAC /* PDFGenerator-dummy.m */; };
+		A77CC92939B1B58F5E3A3A129E25E7A4 /* EditScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE669D58CB2FBEF15D820AE9C8A43889 /* EditScanViewController.swift */; };
+		A7FE1FDD99827D917F8BE5BE339E7923 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 697C2F814B420FBE4F4D4A54A2437C9C /* WebKit.framework */; };
+		B2ABBDAFAD948DBB056F5B1BCF06A68F /* flash@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 188FD4439E8972812C3F627C8AF1B1B7 /* flash@3x.png */; };
+		BB66C9C0B4540AF8759F6A1AC9F08B15 /* WeScan.h in Headers */ = {isa = PBXBuildFile; fileRef = 496BA17E135605302B558B2990D66A0E /* WeScan.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BCF5936633C4BE70216CF045ABFEE155 /* Array+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F485064BB5CEF55E891305E3A0A1333 /* Array+Utils.swift */; };
+		BDD89B01141846D721EE829692175704 /* AVCaptureVideoOrientation+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B83C48518B915F23CD6E626C1C7308 /* AVCaptureVideoOrientation+Utils.swift */; };
+		BE027EC92C07C3AF7747BE35E38DC842 /* flash@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BD9F787BEA58812BB394F21A3E09906A /* flash@2x.png */; };
+		C259113BE9BEB11D81744D32727F74CA /* flashUnavailable@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D9500661A55C34DABA378B195FCA456 /* flashUnavailable@3x.png */; };
+		CE23B59ACE137F4769984AF8C0C5660F /* flashUnavailable.png in Resources */ = {isa = PBXBuildFile; fileRef = 234936A6F1418BD3F60EC1F4B8F19B10 /* flashUnavailable.png */; };
+		D2580B2BF1466C962AF909C9E2C0F49A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18DA9D271C4EC99485E96A4760883C03 /* Foundation.framework */; };
+		DBD8EAEF44683444953600A315109315 /* PDFGenerator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BB166B3FF142AC8EDE60DD76D9EFBD18 /* PDFGenerator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E51641EBE8577A272E86E2B09110D9E1 /* QuadrilateralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FDCB69087EBC3F712A61F67894858F /* QuadrilateralView.swift */; };
+		E89DA295976956D063FA39B92A546556 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18DA9D271C4EC99485E96A4760883C03 /* Foundation.framework */; };
+		F6D88E24482204973DF8BB5447DED9EF /* CIRectangleDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F63B501F7406086AAB5C45C156B391 /* CIRectangleDetector.swift */; };
+		FA4F69112DDD9A97332A7E957D3F999B /* enhance.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FF542168F11CD14D285FEA27D0E098A /* enhance.png */; };
+		FAAA1C0BD4ABBAB8AFD3C8E172DA206E /* PDFPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0837F69557D9336FDD2BF147EE13298D /* PDFPassword.swift */; };
+		FB9FACFA4EA2306A5F2E6A2DDDDFBBE6 /* CGRect+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76795994D0CF763D62699214DE70F146 /* CGRect+Utils.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1BA8FE64985472F9B3BC07656AB42E34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1043927B68B078C97EB6AC570F0CDD5A;
+			remoteInfo = PDFGenerator;
+		};
+		A09D2C44DCB568F9006128A42E6458EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9DE085782F5FAF1E5C237DBF3A9E668;
+			remoteInfo = WeScan;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03053D2761292A237FFA8696C1BC20DE /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		0837F69557D9336FDD2BF147EE13298D /* PDFPassword.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PDFPassword.swift; path = PDFGenerator/PDFPassword.swift; sourceTree = "<group>"; };
+		0FCB1D16F82A6301D4F4E354693FF83E /* Pods-Betcalsa-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Betcalsa-frameworks.sh"; sourceTree = "<group>"; };
+		10DCF15E0C975C6A704EF6E7F550DBA7 /* CaptureSession+Orientation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CaptureSession+Orientation.swift"; path = "WeScan/Session/CaptureSession+Orientation.swift"; sourceTree = "<group>"; };
+		16B5020612C4C72B9F4011902D7BD916 /* Quadrilateral.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Quadrilateral.swift; path = WeScan/Common/Quadrilateral.swift; sourceTree = "<group>"; };
+		188FD4439E8972812C3F627C8AF1B1B7 /* flash@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "flash@3x.png"; path = "WeScan/Assets/flash@3x.png"; sourceTree = "<group>"; };
+		18DA9D271C4EC99485E96A4760883C03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		19783A579436B00E0570A1F929A139C6 /* WeScan-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WeScan-dummy.m"; sourceTree = "<group>"; };
+		19EF0193878A7B3A5D94526D5B6F5475 /* PDFPageRenderable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PDFPageRenderable.swift; path = PDFGenerator/PDFPageRenderable.swift; sourceTree = "<group>"; };
+		1C7B8FD8E03F06F70D1E834B37E5651E /* Pods-Betcalsa-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Betcalsa-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1F485064BB5CEF55E891305E3A0A1333 /* Array+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+Utils.swift"; path = "WeScan/Extensions/Array+Utils.swift"; sourceTree = "<group>"; };
+		1FF542168F11CD14D285FEA27D0E098A /* enhance.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = enhance.png; path = WeScan/Assets/enhance.png; sourceTree = "<group>"; };
+		228F37B7E725259DA27DDD93D6F0BF73 /* WeScan-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WeScan-prefix.pch"; sourceTree = "<group>"; };
+		234936A6F1418BD3F60EC1F4B8F19B10 /* flashUnavailable.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flashUnavailable.png; path = WeScan/Assets/flashUnavailable.png; sourceTree = "<group>"; };
+		24390EFD555DD124430DFF9724065945 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		246955A3FCD23141ADAC6ACB6B07308B /* WeScan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WeScan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		287488F0FC6377F971B55135A33EE469 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BBB98F0EB926A289FE3986480EC1731 /* WeScan.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WeScan.xcconfig; sourceTree = "<group>"; };
+		2C2EF80366A90A45324B5822FCA82067 /* Pods-Betcalsa-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Betcalsa-dummy.m"; sourceTree = "<group>"; };
+		2D0D235CD9D02AA6F3ABD1F476309902 /* CaptureSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CaptureSession.swift; path = WeScan/Session/CaptureSession.swift; sourceTree = "<group>"; };
+		309F4F6907A2BDF7EA446D05D79A5368 /* PDFGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PDFGenerator.swift; path = PDFGenerator/PDFGenerator.swift; sourceTree = "<group>"; };
+		3131B00E51C4B80D5B04A1567D4587FA /* ShutterButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShutterButton.swift; path = WeScan/Scan/ShutterButton.swift; sourceTree = "<group>"; };
+		3241E2A45EAE449667FB7F5620540017 /* enhance@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "enhance@3x.png"; path = "WeScan/Assets/enhance@3x.png"; sourceTree = "<group>"; };
+		33F3C1AB3AA47AF33897AB5BE59A29CA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		379B9887B5765CC510000C1E391AB6C7 /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = WeScan/Common/Error.swift; sourceTree = "<group>"; };
+		3A5E5F5854C95C1FE8E93AC24B3B2C85 /* PDFGenerator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PDFGenerator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3ED7D6E237FB55088F1DD7EFC6C133BF /* WeScan-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WeScan-umbrella.h"; sourceTree = "<group>"; };
+		496BA17E135605302B558B2990D66A0E /* WeScan.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WeScan.h; path = WeScan/WeScan.h; sourceTree = "<group>"; };
+		5031521ECBCDFC76B4196F0ED0616A55 /* CIImage+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CIImage+Utils.swift"; path = "WeScan/Extensions/CIImage+Utils.swift"; sourceTree = "<group>"; };
+		51F5E7006ACF2B0D39D7BBACBE548577 /* DPIType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DPIType.swift; path = PDFGenerator/DPIType.swift; sourceTree = "<group>"; };
+		53CF308EE5AC325186FFD8C007A0B870 /* PDFGenerateError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PDFGenerateError.swift; path = PDFGenerator/PDFGenerateError.swift; sourceTree = "<group>"; };
+		5AF80098B64EC25C74373BF496199944 /* UIImage+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Utils.swift"; path = "WeScan/Extensions/UIImage+Utils.swift"; sourceTree = "<group>"; };
+		643569BD26084AF374B82A1177A78FAC /* PDFGenerator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PDFGenerator-dummy.m"; sourceTree = "<group>"; };
+		697C2F814B420FBE4F4D4A54A2437C9C /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
+		6D9500661A55C34DABA378B195FCA456 /* flashUnavailable@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "flashUnavailable@3x.png"; path = "WeScan/Assets/flashUnavailable@3x.png"; sourceTree = "<group>"; };
+		72AB995E281B843834DC67A23F6D3D00 /* Pods-Betcalsa-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Betcalsa-resources.sh"; sourceTree = "<group>"; };
+		76795994D0CF763D62699214DE70F146 /* CGRect+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGRect+Utils.swift"; path = "WeScan/Extensions/CGRect+Utils.swift"; sourceTree = "<group>"; };
+		83B8D3A137C722991F470928918BFAEA /* RectangleFeaturesFunnel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RectangleFeaturesFunnel.swift; path = WeScan/Scan/RectangleFeaturesFunnel.swift; sourceTree = "<group>"; };
+		86B83C48518B915F23CD6E626C1C7308 /* AVCaptureVideoOrientation+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "AVCaptureVideoOrientation+Utils.swift"; path = "WeScan/Extensions/AVCaptureVideoOrientation+Utils.swift"; sourceTree = "<group>"; };
+		873A29E6E2D755FFEFB7890F0FBB0D65 /* ReviewViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReviewViewController.swift; path = WeScan/Review/ReviewViewController.swift; sourceTree = "<group>"; };
+		881F9EAF54D538EFA72B3CD8E3D39EF1 /* PDFGenerator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PDFGenerator-prefix.pch"; sourceTree = "<group>"; };
+		88FDCB69087EBC3F712A61F67894858F /* QuadrilateralView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuadrilateralView.swift; path = WeScan/Common/QuadrilateralView.swift; sourceTree = "<group>"; };
+		92052488434EE808C521C6E18E123CDB /* WeScan.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WeScan.modulemap; sourceTree = "<group>"; };
+		96F63B501F7406086AAB5C45C156B391 /* CIRectangleDetector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CIRectangleDetector.swift; path = WeScan/Common/CIRectangleDetector.swift; sourceTree = "<group>"; };
+		98B98B0D21DCC9ADC41F78C613ED1084 /* CGPoint+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGPoint+Utils.swift"; path = "WeScan/Extensions/CGPoint+Utils.swift"; sourceTree = "<group>"; };
+		9B4A0B1CB7166318303CC97A7E5CFF20 /* ImageScannerController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageScannerController.swift; path = WeScan/ImageScannerController.swift; sourceTree = "<group>"; };
+		A0CFA67BAB1D013B39EAA223BA0284FD /* ZoomGestureController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZoomGestureController.swift; path = WeScan/Edit/ZoomGestureController.swift; sourceTree = "<group>"; };
+		A45F2AFF2CB1FB94AAE6BCFDA4F65F7B /* Pods-Betcalsa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Betcalsa.debug.xcconfig"; sourceTree = "<group>"; };
+		B0C34633EBEC4C6B907FE59EFC44D45B /* EditScanCornerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EditScanCornerView.swift; path = WeScan/Common/EditScanCornerView.swift; sourceTree = "<group>"; };
+		B531851A61221E2D267AC092A2E610D1 /* PDFPagedScrollViewConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PDFPagedScrollViewConfiguration.swift; path = PDFGenerator/PDFPagedScrollViewConfiguration.swift; sourceTree = "<group>"; };
+		B706397A11FBC81840C364B61997B1AD /* Pods-Betcalsa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Betcalsa.release.xcconfig"; sourceTree = "<group>"; };
+		B798C4EC26B52BD3781265EA91CE138C /* UIImage+Orientation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Orientation.swift"; path = "WeScan/Extensions/UIImage+Orientation.swift"; sourceTree = "<group>"; };
+		BAD80F5828B6CC27BE9D9B6E174278AA /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = "pt-PT.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		BB166B3FF142AC8EDE60DD76D9EFBD18 /* PDFGenerator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PDFGenerator-umbrella.h"; sourceTree = "<group>"; };
+		BC7729785D4DC66BC36DDC516CE0016D /* Pods-Betcalsa-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Betcalsa-acknowledgements.plist"; sourceTree = "<group>"; };
+		BD938F2A0954466B909C5FB425A6EC99 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD9F787BEA58812BB394F21A3E09906A /* flash@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "flash@2x.png"; path = "WeScan/Assets/flash@2x.png"; sourceTree = "<group>"; };
+		C6E7F74D320E1020C53734C71922CA5C /* Pods_Betcalsa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Betcalsa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C963F947FADB458C87BFFDD9339626FE /* Pods-Betcalsa.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Betcalsa.modulemap"; sourceTree = "<group>"; };
+		CDFA63102D82F77C0554382E47247068 /* FilePathConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FilePathConvertible.swift; path = PDFGenerator/FilePathConvertible.swift; sourceTree = "<group>"; };
+		D331D56CFD9E46E9F916CFDBF55A7FC0 /* PDFPage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PDFPage.swift; path = PDFGenerator/PDFPage.swift; sourceTree = "<group>"; };
+		D41C038665DD6701C73A4D0710587AA6 /* enhance@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "enhance@2x.png"; path = "WeScan/Assets/enhance@2x.png"; sourceTree = "<group>"; };
+		DC63342FD5C3652B7EF91E4C026CD5C4 /* CaptureSessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CaptureSessionManager.swift; path = WeScan/Scan/CaptureSessionManager.swift; sourceTree = "<group>"; };
+		DC696D160CABD000A82C89359DDD1DFA /* PDFGenerator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PDFGenerator.modulemap; sourceTree = "<group>"; };
+		DC851B03F8CCD32A1FE24500546DC1FD /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DD520D8FEFFE623C217F2DF19EB00B7F /* VisionRectangleDetector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VisionRectangleDetector.swift; path = WeScan/Common/VisionRectangleDetector.swift; sourceTree = "<group>"; };
+		E0080884694CA0B5998CAA4814BA8493 /* ScannerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScannerViewController.swift; path = WeScan/Scan/ScannerViewController.swift; sourceTree = "<group>"; };
+		E39282CB61D086EC6CB5B3A71C217E85 /* Pods-Betcalsa-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Betcalsa-umbrella.h"; sourceTree = "<group>"; };
+		E7FDB37B625ED5C690C6B157B5D5DD67 /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E96A73072137D5FEC2B45FD338E5E9C8 /* PDFGenerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PDFGenerator.h; path = PDFGenerator/PDFGenerator.h; sourceTree = "<group>"; };
+		EB5BD32979DEFCD3DC83B189437173AB /* flashUnavailable@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "flashUnavailable@2x.png"; path = "WeScan/Assets/flashUnavailable@2x.png"; sourceTree = "<group>"; };
+		F22E7DBC91D05B8234A7D66F72B38524 /* CGAffineTransform+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGAffineTransform+Utils.swift"; path = "WeScan/Extensions/CGAffineTransform+Utils.swift"; sourceTree = "<group>"; };
+		F354A016A9B701FDC6A2CA2145FD2984 /* PDFGenerator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PDFGenerator.xcconfig; sourceTree = "<group>"; };
+		F403C9AF2F13C7097CA4BF1463BB5EFD /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		F429332E2C586BA45FFCE81D09FFC38B /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F62213F23A0D4B92ADF76097D34E1002 /* Transformable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Transformable.swift; path = WeScan/Protocols/Transformable.swift; sourceTree = "<group>"; };
+		FAEFFDEB86D67D94E4A8535D14714B88 /* flash.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flash.png; path = WeScan/Assets/flash.png; sourceTree = "<group>"; };
+		FE669D58CB2FBEF15D820AE9C8A43889 /* EditScanViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EditScanViewController.swift; path = WeScan/Edit/EditScanViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22B69E954A27AA2D01932E9840F43C9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				691AFF400DEDB29F6CBF13DFDF5C6D6C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9025BB7EB2D6D538660A0D56A03E1C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2580B2BF1466C962AF909C9E2C0F49A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC9E9E70017E59CBE06D3D60C8F12E72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E89DA295976956D063FA39B92A546556 /* Foundation.framework in Frameworks */,
+				A7FE1FDD99827D917F8BE5BE339E7923 /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0BBD48784E8719B6AF2DDC92A4078D47 /* Pods-Betcalsa */ = {
+			isa = PBXGroup;
+			children = (
+				33F3C1AB3AA47AF33897AB5BE59A29CA /* Info.plist */,
+				C963F947FADB458C87BFFDD9339626FE /* Pods-Betcalsa.modulemap */,
+				1C7B8FD8E03F06F70D1E834B37E5651E /* Pods-Betcalsa-acknowledgements.markdown */,
+				BC7729785D4DC66BC36DDC516CE0016D /* Pods-Betcalsa-acknowledgements.plist */,
+				2C2EF80366A90A45324B5822FCA82067 /* Pods-Betcalsa-dummy.m */,
+				0FCB1D16F82A6301D4F4E354693FF83E /* Pods-Betcalsa-frameworks.sh */,
+				72AB995E281B843834DC67A23F6D3D00 /* Pods-Betcalsa-resources.sh */,
+				E39282CB61D086EC6CB5B3A71C217E85 /* Pods-Betcalsa-umbrella.h */,
+				A45F2AFF2CB1FB94AAE6BCFDA4F65F7B /* Pods-Betcalsa.debug.xcconfig */,
+				B706397A11FBC81840C364B61997B1AD /* Pods-Betcalsa.release.xcconfig */,
+			);
+			name = "Pods-Betcalsa";
+			path = "Target Support Files/Pods-Betcalsa";
+			sourceTree = "<group>";
+		};
+		0FD7A9057D247B0B872FE41A229C82B1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1FF542168F11CD14D285FEA27D0E098A /* enhance.png */,
+				D41C038665DD6701C73A4D0710587AA6 /* enhance@2x.png */,
+				3241E2A45EAE449667FB7F5620540017 /* enhance@3x.png */,
+				FAEFFDEB86D67D94E4A8535D14714B88 /* flash.png */,
+				BD9F787BEA58812BB394F21A3E09906A /* flash@2x.png */,
+				188FD4439E8972812C3F627C8AF1B1B7 /* flash@3x.png */,
+				234936A6F1418BD3F60EC1F4B8F19B10 /* flashUnavailable.png */,
+				EB5BD32979DEFCD3DC83B189437173AB /* flashUnavailable@2x.png */,
+				6D9500661A55C34DABA378B195FCA456 /* flashUnavailable@3x.png */,
+				C016E445C42C7C4E4F1C52C886DBC59C /* Localizable.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6477208A6E3C4BF66745FD0BDEF67B3 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1A4AD364985356DE4EBE936E2DA98305 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BD938F2A0954466B909C5FB425A6EC99 /* Info.plist */,
+				92052488434EE808C521C6E18E123CDB /* WeScan.modulemap */,
+				2BBB98F0EB926A289FE3986480EC1731 /* WeScan.xcconfig */,
+				19783A579436B00E0570A1F929A139C6 /* WeScan-dummy.m */,
+				228F37B7E725259DA27DDD93D6F0BF73 /* WeScan-prefix.pch */,
+				3ED7D6E237FB55088F1DD7EFC6C133BF /* WeScan-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/WeScan";
+			sourceTree = "<group>";
+		};
+		512F8162E3B81F934561908C922E9736 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EFEB93B7B295C95926E8D244C5639533 /* PDFGenerator */,
+				C61C6AEE4C805B2C6CC8A9C3FA65F7A9 /* WeScan */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		75E3C47501CCCE374B8549D22449AD88 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0BBD48784E8719B6AF2DDC92A4078D47 /* Pods-Betcalsa */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		B6477208A6E3C4BF66745FD0BDEF67B3 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				18DA9D271C4EC99485E96A4760883C03 /* Foundation.framework */,
+				697C2F814B420FBE4F4D4A54A2437C9C /* WebKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C61C6AEE4C805B2C6CC8A9C3FA65F7A9 /* WeScan */ = {
+			isa = PBXGroup;
+			children = (
+				1F485064BB5CEF55E891305E3A0A1333 /* Array+Utils.swift */,
+				86B83C48518B915F23CD6E626C1C7308 /* AVCaptureVideoOrientation+Utils.swift */,
+				2D0D235CD9D02AA6F3ABD1F476309902 /* CaptureSession.swift */,
+				10DCF15E0C975C6A704EF6E7F550DBA7 /* CaptureSession+Orientation.swift */,
+				DC63342FD5C3652B7EF91E4C026CD5C4 /* CaptureSessionManager.swift */,
+				F22E7DBC91D05B8234A7D66F72B38524 /* CGAffineTransform+Utils.swift */,
+				98B98B0D21DCC9ADC41F78C613ED1084 /* CGPoint+Utils.swift */,
+				76795994D0CF763D62699214DE70F146 /* CGRect+Utils.swift */,
+				5031521ECBCDFC76B4196F0ED0616A55 /* CIImage+Utils.swift */,
+				96F63B501F7406086AAB5C45C156B391 /* CIRectangleDetector.swift */,
+				B0C34633EBEC4C6B907FE59EFC44D45B /* EditScanCornerView.swift */,
+				FE669D58CB2FBEF15D820AE9C8A43889 /* EditScanViewController.swift */,
+				379B9887B5765CC510000C1E391AB6C7 /* Error.swift */,
+				9B4A0B1CB7166318303CC97A7E5CFF20 /* ImageScannerController.swift */,
+				16B5020612C4C72B9F4011902D7BD916 /* Quadrilateral.swift */,
+				88FDCB69087EBC3F712A61F67894858F /* QuadrilateralView.swift */,
+				83B8D3A137C722991F470928918BFAEA /* RectangleFeaturesFunnel.swift */,
+				873A29E6E2D755FFEFB7890F0FBB0D65 /* ReviewViewController.swift */,
+				E0080884694CA0B5998CAA4814BA8493 /* ScannerViewController.swift */,
+				3131B00E51C4B80D5B04A1567D4587FA /* ShutterButton.swift */,
+				F62213F23A0D4B92ADF76097D34E1002 /* Transformable.swift */,
+				B798C4EC26B52BD3781265EA91CE138C /* UIImage+Orientation.swift */,
+				5AF80098B64EC25C74373BF496199944 /* UIImage+Utils.swift */,
+				DD520D8FEFFE623C217F2DF19EB00B7F /* VisionRectangleDetector.swift */,
+				496BA17E135605302B558B2990D66A0E /* WeScan.h */,
+				A0CFA67BAB1D013B39EAA223BA0284FD /* ZoomGestureController.swift */,
+				0FD7A9057D247B0B872FE41A229C82B1 /* Resources */,
+				1A4AD364985356DE4EBE936E2DA98305 /* Support Files */,
+			);
+			path = WeScan;
+			sourceTree = "<group>";
+		};
+		CD26675FABAAC15175EB0CD8D5778752 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A5E5F5854C95C1FE8E93AC24B3B2C85 /* PDFGenerator.framework */,
+				C6E7F74D320E1020C53734C71922CA5C /* Pods_Betcalsa.framework */,
+				246955A3FCD23141ADAC6ACB6B07308B /* WeScan.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				24390EFD555DD124430DFF9724065945 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				512F8162E3B81F934561908C922E9736 /* Pods */,
+				CD26675FABAAC15175EB0CD8D5778752 /* Products */,
+				75E3C47501CCCE374B8549D22449AD88 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		EFEB93B7B295C95926E8D244C5639533 /* PDFGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				51F5E7006ACF2B0D39D7BBACBE548577 /* DPIType.swift */,
+				CDFA63102D82F77C0554382E47247068 /* FilePathConvertible.swift */,
+				53CF308EE5AC325186FFD8C007A0B870 /* PDFGenerateError.swift */,
+				E96A73072137D5FEC2B45FD338E5E9C8 /* PDFGenerator.h */,
+				309F4F6907A2BDF7EA446D05D79A5368 /* PDFGenerator.swift */,
+				D331D56CFD9E46E9F916CFDBF55A7FC0 /* PDFPage.swift */,
+				B531851A61221E2D267AC092A2E610D1 /* PDFPagedScrollViewConfiguration.swift */,
+				19EF0193878A7B3A5D94526D5B6F5475 /* PDFPageRenderable.swift */,
+				0837F69557D9336FDD2BF147EE13298D /* PDFPassword.swift */,
+				F95A2BD2CAB2682DC7DCD313C40AD86A /* Support Files */,
+			);
+			path = PDFGenerator;
+			sourceTree = "<group>";
+		};
+		F95A2BD2CAB2682DC7DCD313C40AD86A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				287488F0FC6377F971B55135A33EE469 /* Info.plist */,
+				DC696D160CABD000A82C89359DDD1DFA /* PDFGenerator.modulemap */,
+				F354A016A9B701FDC6A2CA2145FD2984 /* PDFGenerator.xcconfig */,
+				643569BD26084AF374B82A1177A78FAC /* PDFGenerator-dummy.m */,
+				881F9EAF54D538EFA72B3CD8E3D39EF1 /* PDFGenerator-prefix.pch */,
+				BB166B3FF142AC8EDE60DD76D9EFBD18 /* PDFGenerator-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PDFGenerator";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		33EB161D61EFB690A349945656A64B6E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C8D949C0AA64C1194AD337F53CB3FCA /* WeScan-umbrella.h in Headers */,
+				BB66C9C0B4540AF8759F6A1AC9F08B15 /* WeScan.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		850C9EA8BD77E101E3AA83962F1999F5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBD8EAEF44683444953600A315109315 /* PDFGenerator-umbrella.h in Headers */,
+				8198B05BC267BB773747E3FF0D4C1E67 /* PDFGenerator.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FA22996AAA1DF4CC5D7855110EBD9EC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CFECAED2D66693F51762822771381A4 /* Pods-Betcalsa-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1043927B68B078C97EB6AC570F0CDD5A /* PDFGenerator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B00449F2F59A048A3255A19E3D2EE6FC /* Build configuration list for PBXNativeTarget "PDFGenerator" */;
+			buildPhases = (
+				850C9EA8BD77E101E3AA83962F1999F5 /* Headers */,
+				A07717178FD1539AB0EA4AB936F414E4 /* Sources */,
+				BC9E9E70017E59CBE06D3D60C8F12E72 /* Frameworks */,
+				47E46D75F5162DFD01C4D80DA581293B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PDFGenerator;
+			productName = PDFGenerator;
+			productReference = 3A5E5F5854C95C1FE8E93AC24B3B2C85 /* PDFGenerator.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B7EC765433F8AEAAF19D1AAB84F1CD6C /* Pods-Betcalsa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38ADDE6CD6411EEE80FDB189904ABFFF /* Build configuration list for PBXNativeTarget "Pods-Betcalsa" */;
+			buildPhases = (
+				8FA22996AAA1DF4CC5D7855110EBD9EC /* Headers */,
+				D68375C850F211281D20C293A44AAD1A /* Sources */,
+				A9025BB7EB2D6D538660A0D56A03E1C2 /* Frameworks */,
+				9A5DEB69C0E612977BE1A4C748FC3381 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26146DC91B54CB7C043FBA91EE71B8C4 /* PBXTargetDependency */,
+				EF6C996384AB362C54F84ADF3A27236B /* PBXTargetDependency */,
+			);
+			name = "Pods-Betcalsa";
+			productName = "Pods-Betcalsa";
+			productReference = C6E7F74D320E1020C53734C71922CA5C /* Pods_Betcalsa.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D9DE085782F5FAF1E5C237DBF3A9E668 /* WeScan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 069C6A0D4E5578F4C3F85260806E233B /* Build configuration list for PBXNativeTarget "WeScan" */;
+			buildPhases = (
+				33EB161D61EFB690A349945656A64B6E /* Headers */,
+				32CBA2AAC3F8C7E83635D5EF800A92AF /* Sources */,
+				22B69E954A27AA2D01932E9840F43C9A /* Frameworks */,
+				49806FC13038BEC9B4D89DC7A9AE5F3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WeScan;
+			productName = WeScan;
+			productReference = 246955A3FCD23141ADAC6ACB6B07308B /* WeScan.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 1010;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = CD26675FABAAC15175EB0CD8D5778752 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1043927B68B078C97EB6AC570F0CDD5A /* PDFGenerator */,
+				B7EC765433F8AEAAF19D1AAB84F1CD6C /* Pods-Betcalsa */,
+				D9DE085782F5FAF1E5C237DBF3A9E668 /* WeScan */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		47E46D75F5162DFD01C4D80DA581293B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49806FC13038BEC9B4D89DC7A9AE5F3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA4F69112DDD9A97332A7E957D3F999B /* enhance.png in Resources */,
+				722C4A04A827EB5104AA35D4109BBE0B /* enhance@2x.png in Resources */,
+				01D44A94C265F4AC3F9D70641A800D91 /* enhance@3x.png in Resources */,
+				8B902BA41292547F901E24025593186B /* flash.png in Resources */,
+				BE027EC92C07C3AF7747BE35E38DC842 /* flash@2x.png in Resources */,
+				B2ABBDAFAD948DBB056F5B1BCF06A68F /* flash@3x.png in Resources */,
+				CE23B59ACE137F4769984AF8C0C5660F /* flashUnavailable.png in Resources */,
+				0B41EEBA0F21F1A756D4DA517A713B4F /* flashUnavailable@2x.png in Resources */,
+				C259113BE9BEB11D81744D32727F74CA /* flashUnavailable@3x.png in Resources */,
+				4F07185A946350E28BF0034B7B72523F /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A5DEB69C0E612977BE1A4C748FC3381 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32CBA2AAC3F8C7E83635D5EF800A92AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCF5936633C4BE70216CF045ABFEE155 /* Array+Utils.swift in Sources */,
+				BDD89B01141846D721EE829692175704 /* AVCaptureVideoOrientation+Utils.swift in Sources */,
+				A5761B63947C5E94C4B961AFE0344FE7 /* CaptureSession+Orientation.swift in Sources */,
+				4FFC72EEBA853BB7531A5058BB85FEA2 /* CaptureSession.swift in Sources */,
+				94653E9D4FE6FEDE9B85899BFC67BD78 /* CaptureSessionManager.swift in Sources */,
+				1E1FE901756183DA63490A5D515883BE /* CGAffineTransform+Utils.swift in Sources */,
+				33CD3D5137D5F1166CEED5FEF4D1677F /* CGPoint+Utils.swift in Sources */,
+				FB9FACFA4EA2306A5F2E6A2DDDDFBBE6 /* CGRect+Utils.swift in Sources */,
+				8239EC87DC5591A020033DA49EF3EF6A /* CIImage+Utils.swift in Sources */,
+				F6D88E24482204973DF8BB5447DED9EF /* CIRectangleDetector.swift in Sources */,
+				2EFCD503B18F18D811191364814D2BDE /* EditScanCornerView.swift in Sources */,
+				A77CC92939B1B58F5E3A3A129E25E7A4 /* EditScanViewController.swift in Sources */,
+				730A274AE64694FB6F7E16FC138FB90D /* Error.swift in Sources */,
+				507EB76CE3BD4556BC9D28C97F96C8EE /* ImageScannerController.swift in Sources */,
+				7D1BB9FD4ECA825EFB4FC2DFFCCEEFB8 /* Quadrilateral.swift in Sources */,
+				E51641EBE8577A272E86E2B09110D9E1 /* QuadrilateralView.swift in Sources */,
+				9C294F07F2DC6D966709F11457A788A9 /* RectangleFeaturesFunnel.swift in Sources */,
+				1217B41B717A3B9D4E64DA859A6CBB40 /* ReviewViewController.swift in Sources */,
+				2698AC75282B239AA7BA5D1488871447 /* ScannerViewController.swift in Sources */,
+				029A24BBAAAB7A60046E802F615D47F7 /* ShutterButton.swift in Sources */,
+				3325C6ECC2E5383B08F363FCFE556AD6 /* Transformable.swift in Sources */,
+				008831C7D6F9E2CEB7F8D1DE00FB1F83 /* UIImage+Orientation.swift in Sources */,
+				60FE573B4BF0C47C44A359EA6A45E34B /* UIImage+Utils.swift in Sources */,
+				1EF7347929FA5AC8A0FC2316D8456A15 /* VisionRectangleDetector.swift in Sources */,
+				41D61C03C713AC6F5918EFD513117774 /* WeScan-dummy.m in Sources */,
+				783E4A4F7A42DB1E22F715F58AD51CE1 /* ZoomGestureController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A07717178FD1539AB0EA4AB936F414E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				422D1B9BDA72F3479711DECB0D96311C /* DPIType.swift in Sources */,
+				14F0E3621A4B9DB5B2BE121C6AD28031 /* FilePathConvertible.swift in Sources */,
+				5A32ED1027A6920B09DDDB93A9E2C9F0 /* PDFGenerateError.swift in Sources */,
+				A65D210B94CC76D34B7FD1BCE4A3AD03 /* PDFGenerator-dummy.m in Sources */,
+				590878CDD0A16F549AB94191FE6A5E87 /* PDFGenerator.swift in Sources */,
+				734913A47C8D23C7C4371064311638DE /* PDFPage.swift in Sources */,
+				1BD48CF74E5C1A4B0217B5C4B84E82E5 /* PDFPagedScrollViewConfiguration.swift in Sources */,
+				9CD6E5D927BE00763C0BB1AF97B13DAA /* PDFPageRenderable.swift in Sources */,
+				FAAA1C0BD4ABBAB8AFD3C8E172DA206E /* PDFPassword.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D68375C850F211281D20C293A44AAD1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61FCE2D29B5009DBB1D5A1AA0C414B4D /* Pods-Betcalsa-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		26146DC91B54CB7C043FBA91EE71B8C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PDFGenerator;
+			target = 1043927B68B078C97EB6AC570F0CDD5A /* PDFGenerator */;
+			targetProxy = 1BA8FE64985472F9B3BC07656AB42E34 /* PBXContainerItemProxy */;
+		};
+		EF6C996384AB362C54F84ADF3A27236B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WeScan;
+			target = D9DE085782F5FAF1E5C237DBF3A9E668 /* WeScan */;
+			targetProxy = A09D2C44DCB568F9006128A42E6458EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C016E445C42C7C4E4F1C52C886DBC59C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC851B03F8CCD32A1FE24500546DC1FD /* Localizable.strings */,
+				F429332E2C586BA45FFCE81D09FFC38B /* Localizable.strings */,
+				E7FDB37B625ED5C690C6B157B5D5DD67 /* Localizable.strings */,
+				BAD80F5828B6CC27BE9D9B6E174278AA /* Localizable.strings */,
+				F403C9AF2F13C7097CA4BF1463BB5EFD /* Localizable.strings */,
+				03053D2761292A237FFA8696C1BC20DE /* Localizable.strings */,
+			);
+			name = Localizable.strings;
+			path = WeScan;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1704D00F04D4C229CE7449FD2414F190 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BBB98F0EB926A289FE3986480EC1731 /* WeScan.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WeScan/WeScan-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WeScan/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/WeScan/WeScan.modulemap";
+				PRODUCT_MODULE_NAME = WeScan;
+				PRODUCT_NAME = WeScan;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6C5ED2858717A79652C8E2D69CFE7F88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		7D297630699FC159E1908D5CB0C82E29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F354A016A9B701FDC6A2CA2145FD2984 /* PDFGenerator.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PDFGenerator/PDFGenerator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PDFGenerator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PDFGenerator/PDFGenerator.modulemap";
+				PRODUCT_MODULE_NAME = PDFGenerator;
+				PRODUCT_NAME = PDFGenerator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7DAFABABE658AC3D0797A2F785271987 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A45F2AFF2CB1FB94AAE6BCFDA4F65F7B /* Pods-Betcalsa.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Betcalsa/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Betcalsa/Pods-Betcalsa.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B76B8A87584ED28A0DE5AEF7DAAA184A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F354A016A9B701FDC6A2CA2145FD2984 /* PDFGenerator.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PDFGenerator/PDFGenerator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PDFGenerator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PDFGenerator/PDFGenerator.modulemap";
+				PRODUCT_MODULE_NAME = PDFGenerator;
+				PRODUCT_NAME = PDFGenerator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B97005A982F1B7ABBF2FB8293261AED2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B706397A11FBC81840C364B61997B1AD /* Pods-Betcalsa.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Betcalsa/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Betcalsa/Pods-Betcalsa.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E2E82B4E4209904AEBDCB80246DA3883 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BBB98F0EB926A289FE3986480EC1731 /* WeScan.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WeScan/WeScan-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WeScan/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/WeScan/WeScan.modulemap";
+				PRODUCT_MODULE_NAME = WeScan;
+				PRODUCT_NAME = WeScan;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EF5BFA818FC42461784455EDD41279F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		069C6A0D4E5578F4C3F85260806E233B /* Build configuration list for PBXNativeTarget "WeScan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1704D00F04D4C229CE7449FD2414F190 /* Debug */,
+				E2E82B4E4209904AEBDCB80246DA3883 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38ADDE6CD6411EEE80FDB189904ABFFF /* Build configuration list for PBXNativeTarget "Pods-Betcalsa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DAFABABE658AC3D0797A2F785271987 /* Debug */,
+				B97005A982F1B7ABBF2FB8293261AED2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C5ED2858717A79652C8E2D69CFE7F88 /* Debug */,
+				EF5BFA818FC42461784455EDD41279F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B00449F2F59A048A3255A19E3D2EE6FC /* Build configuration list for PBXNativeTarget "PDFGenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B76B8A87584ED28A0DE5AEF7DAAA184A /* Debug */,
+				7D297630699FC159E1908D5CB0C82E29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
