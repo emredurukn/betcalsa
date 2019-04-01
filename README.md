@@ -1,12 +1,13 @@
 # Betcalsa
 
-<p align="center">
-    <img width="150px" src="Assets/Logo.png">
-    <br>
-    Document Scanner iOS app written in Swift.
-</p>
+**Betcalsa trims, enhances, and makes documents readable.**
 
-<br>
+- Automatically detect your document
+- Easily edit with your scans after you have scanned them
+- Enhance the scans with black-and-white post-processing
+- Save your scan as PDF or JPG
+- Convert JPG scans to PDF
+- Share documents
 
 ## Technologies
 * [WeScan](https://github.com/WeTransfer/WeScan)
